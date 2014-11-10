@@ -1,0 +1,8 @@
+
+public class Controller {
+	private HeliFly frame;
+	public Controller(HeliFly heliFly) {
+		frame = heliFly;
+	}
+	private void 
+}

@@ -1,0 +1,14 @@
+import java.util.TimerTask;
+
+
+public class GameRunner extends TimerTask {
+	private Model model;
+	public GameRunner(Model m){
+		model = m;
+	}
+	@Override
+	public void run() {
+		model.pos++;
+	}
+
+}

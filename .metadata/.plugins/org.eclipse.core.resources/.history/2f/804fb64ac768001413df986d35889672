@@ -1,0 +1,19 @@
+
+
+public class GameRunner extends Thread {
+	private Model model;
+	public GameRunner(Model m){
+		model = m;
+	}
+	@Override
+	public void run() {
+		model.pos++;
+		model.refreshPane();
+		try{
+			wait(2000);
+		}catch(InterruptedException e){
+			System.err.println("Got interrupted (Game Runner)");
+		}
+	}
+
+}

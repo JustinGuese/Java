@@ -1,0 +1,12 @@
+import java.awt.event.KeyEvent;
+
+
+public class Controller {
+	private HeliFly frame;
+	public Controller() {
+	
+	}
+	protected void actionOccured(KeyEvent e){
+		System.out.println("Controller: "+e.getKeyChar()");"
+	}
+}

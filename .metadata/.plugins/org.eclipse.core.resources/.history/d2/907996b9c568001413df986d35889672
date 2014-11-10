@@ -1,0 +1,15 @@
+import java.util.TimerTask;
+
+
+public class GameRunner extends TimerTask {
+	private int pos;
+	public GameRunner(int p){
+		pos = p;
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

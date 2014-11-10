@@ -1,0 +1,19 @@
+
+
+
+
+public class GameRunner extends Thread {
+	private Model model;
+	public GameRunner(Model m){
+		model = m;
+	}
+	@Override
+	public void run() {
+		while(true){
+			model.posUp();
+			model.refreshPane();
+			Thread.sleep(2000);
+		}
+	}
+
+}
